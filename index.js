@@ -10,6 +10,10 @@ app.get('/hello', (req, res) => {
   res.send('Hello from Node.js!');
 });
 
+app.get('/test', (req, res) => {
+  res.send('Hello from test endpoint');
+});
+
 // Start the server
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on http://0.0.0.0:${PORT}`);
